@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "blogs",
+  "collectionName": "authors",
   "info": {
-    "singularName": "blog",
-    "pluralName": "blogs",
-    "displayName": "Posts",
+    "singularName": "author",
+    "pluralName": "authors",
+    "displayName": "Author",
     "description": ""
   },
   "options": {
@@ -12,11 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
+    "name": {
+      "type": "string"
     },
-    "image": {
+    "avatar": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -27,9 +26,11 @@
         "audios"
       ]
     },
-    "description": {
-      "type": "text",
-      "required": true
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "authorsBio"
     }
   }
 }

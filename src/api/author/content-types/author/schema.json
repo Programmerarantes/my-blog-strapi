@@ -31,6 +31,12 @@
       "relation": "oneToMany",
       "target": "api::article.article",
       "mappedBy": "authorsBio"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string"
     }
   }
 }

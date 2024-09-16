@@ -14,4 +14,4 @@ FROM public.ecr.aws/docker/library/node:20
     # Run the web service on container startup.
     CMD [ "yarn", "start" ]
 
-    EXPOSE 80
+    EXPOSE 1337

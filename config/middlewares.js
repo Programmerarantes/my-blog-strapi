@@ -18,7 +18,7 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['*'], // Permite todas as origens, ajuste conforme necessário
+      origin: ['https://depapocomasdoulas.netlify.app'], // Permite todas as origens, ajuste conforme necessário
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization'],
     },

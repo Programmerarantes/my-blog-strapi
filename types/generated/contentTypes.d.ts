@@ -853,6 +853,7 @@ export interface ApiAuthorAuthor extends Schema.CollectionType {
     >;
     instagram: Attribute.String;
     whatsapp: Attribute.String;
+    role: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

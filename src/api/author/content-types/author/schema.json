@@ -37,6 +37,9 @@
     },
     "whatsapp": {
       "type": "string"
+    },
+    "role": {
+      "type": "string"
     }
   }
 }
